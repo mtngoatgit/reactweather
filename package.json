@@ -1,7 +1,6 @@
 {
   "name": "dm12review",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "dependencies": {
     "axios": "^0.14.0",
@@ -23,7 +22,19 @@
   },
   "author": "",
   "license": "ISC",
-	"babel": {
-		"presets": ["react", "es2015"]
-	}
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtngoatgit/reactweather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mtngoatgit/reactweather/issues"
+  },
+  "homepage": "https://github.com/mtngoatgit/reactweather#readme",
+  "description": ""
 }
