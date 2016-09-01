@@ -13,22 +13,12 @@ export default React.createClass({
 	render() {
 		return (
 			<div>
-				<input
-					value={this.state.cityInput}
-					onChange={this.handleChange}
-					onKeyDown={this.handleInput} />
-				{this.state.cityList.map((city, index) => {
-					return <City key={index} city={city}/>
-				})}
-				<select onChange={e => this.setState({cityList: this.state.cityList.concat([e.target.value])})}>
-					{citylist
-						.filter((city) => {
-							return this.state.cityList.indexOf(city) === -1;
-						})
-						.map((city) => {
-							return <option key={city} value={city}>{city}</option>
-						})}
-				</select>
+					<input
+						placeholder="What city would you like to know about?"
+						value={this.state.cityInput}
+						onChange={this.state.handleChange}
+						onKeyDown={this.state.handleInput}
+					/>
 			</div>
 		)
 	},
@@ -46,3 +36,37 @@ export default React.createClass({
 		}
 	}
 });
+
+
+
+
+
+
+
+
+
+{
+	// <input placeholder="type city here"
+	// 	value={this.state.cityInput}
+	// 	onChange={this.handleChange}
+	// 	onKeyDown={this.handleInput} />
+	// {this.state.cityList.map((city, index) => {
+	// 	return <City key={index} city={city}/>
+	// })}
+}
+
+
+
+
+
+{
+	// <select onChange={e => this.setState({cityList: this.state.cityList.concat([e.target.value])})}>
+	// 	{citylist
+	// 		.filter((city) => {
+	// 			return this.state.cityList.indexOf(city) === -1;
+	// 		})
+	// 		.map((city) => {
+	// 			return <option key={city} value={city}>{city}</option>
+	// 		})}
+	// </select>
+}
